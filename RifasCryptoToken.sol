@@ -1,15 +1,15 @@
 // SPDX-License-Identifier: MIT
-pragma solidity ^0.8.6;
+pragma solidity ^0.8.15;
 
-contract Token {
+contract RifasCryptoToken {
     
     mapping(address => uint) public balances;
     mapping(address => mapping(address => uint)) public allowance;
     
     uint public totalSupply = 100000000 * 10 ** 8;
     string public name = "Rifas Crypto";
-    string public symbol = "RFC";
-    uint public decimals = 18;
+    string public symbol = "RIFC";
+    uint public decimals = 8;
     
     event Transfer(address indexed from, address indexed to, uint value);
     event Approval(address indexed owner, address indexed spender, uint value);
