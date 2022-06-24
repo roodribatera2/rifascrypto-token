@@ -6,10 +6,10 @@ contract RifasCryptoToken {
     mapping(address => uint) public balances;
     mapping(address => mapping(address => uint)) public allowance;
     
-    uint public totalSupply = 100000000 * 10 ** 8;
+    uint public totalSupply = 800000000000000000000000000;
     string public name = "Rifas Crypto";
     string public symbol = "RIFC";
-    uint public decimals = 8;
+    uint public decimals = 18;
     
     event Transfer(address indexed from, address indexed to, uint value);
     event Approval(address indexed owner, address indexed spender, uint value);
